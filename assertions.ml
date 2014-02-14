@@ -41,7 +41,7 @@ let assert_equal v1 v2 =
 exception Almost_equal of string
 let almost_equal v1 v2 =
   let epsilon = 0.0001 in
-  match (v1 -. v2 <= epsilon) with
+  match (abs(v1 -. v2) <= epsilon) with
   | true -> ()
   | false -> 
     raise (Almost_equal (Printf.sprintf
