@@ -9,6 +9,8 @@ Plugins:      META (0.4), DevFiles (0.4)
 Homepage:     https://github.com/bennn/assertions
 
 Library assertions
-  Path:       lib
-  BuildTools: ocamlbuild
-  Modules:    Serializer, Assertions
+  Path:        lib
+  Pack:        true
+  FindlibName: assertions
+  BuildTools:  ocamlbuild
+  Modules:     Serializer, Assertions
