@@ -8,6 +8,9 @@
 *.cmxs
 *.cmxa
 
+*.swp
+*~
+
 _build
 setup.data
 setup.log
