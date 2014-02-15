@@ -1,0 +1,14 @@
+OASISFormat:  0.4
+OCamlVersion: >= 4.00.0
+Name:         assertions
+Version:      1.0.0
+Synopsis:     Simple assert statements for OCaml
+Authors:      Ben Greenman
+License:      GPL-3
+Plugins:      META (0.4), DevFiles (0.4)
+Homepage:     https://github.com/bennn/assertions
+
+Library assertions
+  Path:       lib
+  BuildTools: ocamlbuild
+  Modules:    Serializer, Assertions
