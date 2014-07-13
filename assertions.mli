@@ -11,7 +11,8 @@ exception Assert_less of string
 val assert_less : 'a -> 'a -> unit
 
 exception Assert_equal of string
-val assert_equal : 'a -> 'a -> unit
+val assert_equal : ('a -> 'a -> bool) -> 'a -> 'a -> unit
+val (===) : 'a -> 'a -> unit
 
 exception Almost_equal of string
 val almost_equal : float -> float -> unit
