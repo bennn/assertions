@@ -6,6 +6,7 @@ authors: "Ben Greenman"
 homepage: "http://github.com/bennn"
 dev-repo: "https://github.com/bennn/assertions.git"
 bug-reports: "https://github.com/bennn/assertions/issues"
+doc: Basic assert statements
 build: [
   ["ocaml" "setup.ml" "-configure"]
   [make "all"]
