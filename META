@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: 3182b8374262c6debfa45c39b0e7f7a5)
+version = "0.1"
+description = "A few basic assert statements"
+archive(byte) = "assertions.cma"
+archive(byte, plugin) = "assertions.cma"
+archive(native) = "assertions.cmxa"
+archive(native, plugin) = "assertions.cmxs"
+exists_if = "assertions.cma"
+# OASIS_STOP
+
