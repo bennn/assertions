@@ -90,16 +90,16 @@ let rec dump r =
       opaque "abstract"
     | x when x = Obj.custom_tag ->
       opaque "custom"
-    | x when x = Obj.final_tag ->
-      opaque "final"
+    (* | x when x = Obj.final_tag -> *)
+    (*   opaque "final" *)
     | x when x = Obj.double_array_tag ->
       opaque "double_array"
     | _ ->
       opaque (Printf.sprintf "unknown: tag %d size %d" t s)
 
 let serialize v = dump (Obj.repr v)
-let truncate (v : 'a) : string = 
+let truncate (v : 'a) : string =
   let dumped = serialize v in
-  if String.length dumped < 100 
-  then dumped 
-  else String.sub dumped 0 100 ^ "... (truncated to save trees!)"
+  if String.length dumped < 100
+  then dumped
+  else String.sub dumped 0 100 ^ "... (truncated)"
