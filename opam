@@ -3,7 +3,7 @@ name: "assertions"
 version: "0.1"
 maintainer: "Ben Greenman"
 authors: "Ben Greenman"
-homepage: "http://github.com/bennn"
+homepage: "http://github.com/bennn/assertions"
 dev-repo: "https://github.com/bennn/assertions.git"
 bug-reports: "https://github.com/bennn/assertions/issues"
 doc: Basic assert statements
