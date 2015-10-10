@@ -17,7 +17,7 @@ API
 - `assert_less : 'a -> 'a -> unit`
 - `assert_equal : ('a -> 'a -> bool) -> 'a -> 'a -> unit`
 - `(===) : 'a -> 'a -> unit`
-- `almost_equal : float -> float -> unit`
+- `almost_equal : ?epsilon:float -> float -> float -> unit`
 - `assert_not_equal : 'a -> 'a -> unit`
 - `assert_is : 'a -> 'a -> unit`
 - `assert_is_not : 'a -> 'a -> unit`

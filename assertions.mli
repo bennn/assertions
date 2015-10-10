@@ -15,7 +15,7 @@ val assert_equal : ('a -> 'a -> bool) -> 'a -> 'a -> unit
 val (===) : 'a -> 'a -> unit
 
 exception Almost_equal of string
-val almost_equal : float -> float -> unit
+val almost_equal : ?epsilon:float -> float -> float -> unit
 
 exception Assert_not_equal of string
 val assert_not_equal : 'a -> 'a -> unit

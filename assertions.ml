@@ -41,8 +41,7 @@ let assert_equal cmp v1 v2 =
 let (===) v1 v2 = assert_equal (=) v1 v2
 
 exception Almost_equal of string
-let almost_equal v1 v2 =
-  let epsilon = 0.0001 in
+let almost_equal ?(epsilon=0.0001) v1 v2 =
   match (abs_float(v1 -. v2) <= epsilon) with
   | true -> ()
   | false ->
